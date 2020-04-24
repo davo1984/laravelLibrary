@@ -21,7 +21,7 @@ class CreatePatronsTable extends Migration
             $table->date('dob');
             $table->char('street');
             $table->char('city');
-            $table->mediumint('zip');
+            $table->integer('zip');
         });
     }
 

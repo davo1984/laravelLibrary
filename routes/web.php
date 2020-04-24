@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'Library@show');
+Route::get('/', 'LibraryController@????');  // ??what goes here
 
-Route::get('/library', 'Libraryontroller@index');
-Route::post('/library', 'LibraryController@store');
-Route::get('/library/patron/create', 'ArticlesController@create');
-Route::get('/library/librarian/edit', 'ArticlesController@edit');
-Route::get('/patron/{book}', 'ArticlesController@show');
-Route::put('/patron/{book}', 'ArticlesController@update');
+Route::get('/librarian/reports', 'LibraryController@index');
+// Route::post('/library', 'LibrarianController@store');
+// Route::get('/librarian/patron/create', 'PatronsController@create');
+// Route::get('/librarian/book/{id}', 'LibrarianController@edit');
+Route::get('/patron/checkedOutList', 'PatronsController@index');
+// Route::put('/patron/{book}', 'PatronsController@update');
