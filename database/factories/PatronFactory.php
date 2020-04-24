@@ -12,6 +12,6 @@ $factory->define(patron::class, function (Faker $faker) {
       'dob' => $faker->dateTimeInInterval($startDate = '-30 years', $interval = '+ 5 days', $timezone = null),
       'street' => $faker->streetAddress,
       'city' => $faker->city,
-      'zip' => $faker->postcode
+      'zip' => 70083
     ];
 });

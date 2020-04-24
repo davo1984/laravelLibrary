@@ -10,7 +10,7 @@
     <body>
       <div class="container">
           <div class="links">
-              <a href="./patron/report">Your Books Status</a>
+              <a href="/patron/report">Your Books Status</a>
               <!-- <a href="/patron/checkout">Checkout</a> -->
               <a href="/librarian/report">Info</a>
               <!-- <a href="/librarian/checkout">Checkout</a>
