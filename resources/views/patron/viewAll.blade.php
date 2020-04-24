@@ -5,9 +5,10 @@
   <div class="container">
     <div class="row">
       <div class="column">
-        <h2>Patron Section</h2>
-        <p>Where patron reports go</p>
-        <a href="#" class="btn">Button</a>
+        @foreach ($books as $book)
+          <li>{{ $book }}</li>
+        @endforeach
+        <!-- <a href="#" class="btn">Button</a> -->
       </div>
     </div>
   </div>

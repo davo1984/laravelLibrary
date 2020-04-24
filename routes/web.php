@@ -13,11 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'LibraryController@????');  // ??what goes here
+Route::view('/', 'welcome');  // welcome == view name == welcome.blade.php
+Route::get('/patron/viewAll', 'PatronController@index');    // list all books avaliable
+Route::get('/patron/checkedOut', 'PatronController@checkedOut'); // list all books checked out
 
-Route::get('/librarian/reports', 'LibraryController@index');
+Route::view('/librarian', 'librarian'); // librarian.blade.php buttons to do stuff
+Route::get('/librarian/reports', 'LibrarianController@index');  // list all books tab list
+
 // Route::post('/library', 'LibrarianController@store');
 // Route::get('/librarian/patron/create', 'PatronsController@create');
 // Route::get('/librarian/book/{id}', 'LibrarianController@edit');
-Route::get('/patron/checkedOutList', 'PatronsController@index');
 // Route::put('/patron/{book}', 'PatronsController@update');
