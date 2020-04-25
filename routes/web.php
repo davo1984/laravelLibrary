@@ -18,6 +18,7 @@ Route::get('/patron/viewAll', 'PatronController@index');         // list all boo
 Route::get('/patron/checkedOut', 'PatronController@checkedOut'); // list all books checked out
 
 Route::get('/book/viewAll', 'BookController@index');         // list all books
+Route::get('/book/{book}', 'BookController@show');         // show a book
 Route::get('/book/checkedOut', 'BookController@checkedOut'); // list all books checked out
 
 Route::get('', 'PatronController@viewAll'); // list all patrons

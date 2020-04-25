@@ -15,11 +15,10 @@ class BookController extends Controller
     return view('book.viewAll', ['books' => $books]);
   }
 
-  public function show()
+  public function show(Book $book)
   {
-    $books = Book::get();
     // dd($books);
-    return view('book.viewBook', ['books' => $books]);
+    return view('book.viewBook', ['book' => $book]);
   }
 
   public function checkedOut()

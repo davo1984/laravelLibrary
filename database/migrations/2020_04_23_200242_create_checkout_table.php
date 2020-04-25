@@ -13,12 +13,14 @@ class CreateCheckoutTable extends Migration
      */
     public function up()
     {
-        Schema::create('checkout', function (Blueprint $table) {
+        Schema::create('checkouts', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->unsignedBigInteger('patron');
-            $table->unsignedBigInteger('book');
+            $table->unsignedBigInteger('patron_id');
+            $table->unsignedBigInteger('book_id');
             $table->date('dueDate');
+            $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade');
+            $table->foreign('patron_id')->references('id')->on('patrons')->onDelete('cascade');
         });
     }
 
