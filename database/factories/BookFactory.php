@@ -2,11 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\book;
+use App\Book;
 use Faker\Generator as Faker;
 
-$factory->define(book::class, function (Faker $faker) {
-  Book::create();
+$factory->define(Book::class, function (Faker $faker) {
   return [
         'title' => $faker->sentence,
         'author' => $faker->name

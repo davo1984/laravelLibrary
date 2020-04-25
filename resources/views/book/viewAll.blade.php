@@ -5,8 +5,8 @@
 <div class="container">
   <div class="row">
     <div class="column">
-      @foreach ($patrons as $patron)
-        <li>{{ $patron->name }}, {{ $patron->id }}</li>
+      @foreach ($books as $book)
+      <li>{{ $book->title }}, {{ $book->id }}</li>
       @endforeach
       <!-- <a href="#" class="btn">Button</a> -->
     </div>

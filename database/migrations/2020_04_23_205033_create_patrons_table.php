@@ -19,9 +19,6 @@ class CreatePatronsTable extends Migration
             $table->char('name');
             $table->char('email')->unique();
             $table->date('dob');
-            $table->char('street');
-            $table->char('city');
-            $table->integer('zip');
         });
     }
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Book;
+use App\Patron;
 use Illuminate\Http\Request;
 
 class PatronController extends Controller
@@ -11,7 +12,14 @@ class PatronController extends Controller
   public function index()
   {
     $patrons = Patron::all();
-    dd($patrons);
+    // dd($patrons);
+    return view('patron.viewAll', ['patrons' => $patrons]);
+  }
+
+  public function showBook()
+  {
+    $patrons = Patron::get();
+    // dd($patrons);
     return view('patron.viewAll', ['patrons' => $patrons]);
   }
 
@@ -19,6 +27,6 @@ class PatronController extends Controller
   {
     $patrons = Patron::get();
 
-    return view('checkedOut.index', ['patrons' => $patron]);
+    return view('patron.checkedOut', ['patrons' => $patrons]);
   }
 }

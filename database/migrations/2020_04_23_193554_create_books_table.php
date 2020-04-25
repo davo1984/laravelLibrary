@@ -17,10 +17,7 @@ class CreateBooksTable extends Migration
             $table->id();
             $table->timestamps();
             $table->char('title');
-            $table->unsignedBigInteger('status');
             $table->char('author');
-            $table->char('genre');
-            $table->text('blurb');
         });
     }
 

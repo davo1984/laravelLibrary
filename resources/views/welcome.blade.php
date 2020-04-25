@@ -8,7 +8,7 @@
   <form action="/patron/checkedOut">
     <label for="libraryCard">Library Card #</label>
     <input type="text" id="libraryCard" name="libraryCard" value=""><br><br><br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="View Your Checked Out Books">
   </form>
 </div>
 
