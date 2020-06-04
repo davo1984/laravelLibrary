@@ -1,6 +1,8 @@
  # Laravel Library
 
-This is a project to help me learn how to manipulate Laravel and its database engine Elequent.
+This is a project to help me practice my PHP skills, learn Laravel and the database engine Elequent.
+
+This project simulates a library. There are books which can be viewed, checked out, and returned. Books which are checked out are listed with the return date or as overdue. Fines for late books are calculated. Librarians can create new book records, retire (delete) books, create new Patron records or manage Patron records. Managing Patron records involves forgiving fines, marking fines as paid, and changing maximum number of books which can be checked out.
 
 # Built With
 
