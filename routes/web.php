@@ -21,7 +21,7 @@ Route::get('/book/viewAll', 'BookController@index');         // list all books
 Route::get('/book/{book}', 'BookController@show');         // show a book
 Route::get('/book/checkedOut', 'BookController@checkedOut'); // list all books checked out
 
-Route::get('', 'PatronController@viewAll'); // list all patrons
+// Route::get('', 'PatronController@viewAll'); // list all patrons    Davo 200616
 // Route::view('/librarian', 'librarian'); // librarian.blade.php buttons to do stuff
 // Route::get('/librarian/reports', 'LibrarianController@index');  // list all books tab list
 

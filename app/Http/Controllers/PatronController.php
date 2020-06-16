@@ -23,6 +23,12 @@ class PatronController extends Controller
     return view('patron.viewAll', ['patrons' => $patrons]);
   }
 
+  public function viewAll()
+  {
+      $patrons = Patron::get();
+      return view('patron.viewAll', ['patrons' => $patrons]);
+  }
+
   public function checkedOut()
   {
     $patrons = Patron::get();
